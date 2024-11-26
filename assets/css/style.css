@@ -28,6 +28,14 @@ body {
 .site-menu h1 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #101010;
+    font-family: "Droid Serif", serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    padding: 1em 0 0;
 }
 
 .site-menu a {
