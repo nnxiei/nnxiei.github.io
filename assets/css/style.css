@@ -107,3 +107,12 @@ body {
     padding-top: 20px;          /* Add padding to control spacing from the top */
 }
 
+.index-main img{
+    height:auto;
+    vertical-align: top;
+    max-width: 100%;
+    border: 0;
+    text-align: center;
+    box-sizing: inherit;
+}
+
