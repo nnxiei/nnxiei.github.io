@@ -77,7 +77,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #dad1b6;
-    border: 1px solid #dad1b6;
+    border: 1px solid #272726;
     height: 100px;
     text-decoration: none;
     font-size: 24px;
@@ -91,7 +91,7 @@ body {
 }
 
 .gallery-horizontal img {
-    max-height: 100%;
+    max-height: 700;
     max-width: auto;
     margin-right: 20px;
 }
