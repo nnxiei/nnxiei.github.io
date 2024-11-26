@@ -13,8 +13,9 @@ body {
     height: 100vh;
 }
 
+
 .site-menu {
-    width: 250px;
+    width: 350px;
     background: #f0ece1;
     color: black;
     padding: 20px;
@@ -27,8 +28,8 @@ body {
 
 .site-menu h1 {
     
-    margin-bottom: 20px;
-    padding-top: 20px;  
+    margin-bottom: 60px;
+    padding-top: 60px;  
     color: #101010;
     font-family: "Droid Serif", serif;
     font-size: 26px;
@@ -36,8 +37,9 @@ body {
     font-weight: normal;
     text-decoration: none;
     display: block;
-    padding: 1.1em 0 0;
-    position: static;
+    padding: 1.5em 0 0;
+    position: static;    
+    align-items: center;
 }
 
 .site-menu a {
@@ -49,13 +51,28 @@ body {
     text-decoration: underline;
 }
 
-.site-menu nav ul {
+.site-menu nav ul li a{
     list-style: none;
+    padding: 0.6em 0 0;
+    text-decoration: none;
+    width: auto;
     padding: 0;
+    font-family: "Droid Serif", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.6;
 }
 
 .site-menu nav li {
-    margin: 10px 0;
+    text-decoration: none;
+    width: auto;
+    padding: 0;
+    font-family: "Droid Serif", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.6;
 }
 
 .social-links {
@@ -78,9 +95,10 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 20px;    
+    align-items: center;
 }
 
 .gallery-item {
@@ -94,43 +112,68 @@ body {
 
 .gallery-thumbnail {
     width: 100%;
-    height: 150px;
+    height: 500px;
     background-size: cover;
     background-position: center;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 10px;    
+    align-items: center;
 }
 
 .gallery-horizontal {
+    align-items: center;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 20px;
+    max-height: 80%; /* Restrict the gallery height as needed */
+    margin: auto; /* Centers it in case of extra space */
+    width: 100%;
+    height: 100vh;
+    bottom:0;
+    scrollbar-gutter: stable; 
+    scrollbar-width: none; /* Ensures consistent scrollbar placement */
+}
+
+.text-wrapper {
+    
     padding: 20px;
+    max-height: 550px;
+    align-items: center;
+    object-fit: cover;
+}
+
+.text-wrapper h2{
+    color: #49422a;
+    font-family: "Droid Serif", serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+
 }
 
 .gallery-horizontal img {
-    height: 550px;
+    height: 650px;
     object-fit: cover;
 }
 
 .index-main {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-start; /* Align text to the top */
-    align-items: center;        /* Horizontally center */
-    flex-grow: 1;
-    text-align: center;
+    justify-content: center;
     padding-top: 20px;          /* Add padding to control spacing from the top */
 }
 
+
+
 .index-main img{
-    height:auto;
-    vertical-align: top;
-    max-width: 100%;
+    height:450px;
+    width: auto;
+    object-fit: cover;
     border: 0;
     text-align: center;
-    box-sizing: inherit;
+    align-items: center;
 }
 
 .index-main p{
@@ -138,5 +181,6 @@ body {
     font-family: "Droid Serif", serif;
     line-height: 1.7 !important;
     font-size: 14px;
+    align-items: center;
 }
 
