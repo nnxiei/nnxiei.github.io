@@ -2,7 +2,7 @@
 layout: base
 title: Collection
 ---
----
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,8 @@ title: Collection
         </aside>
         <div class="gallery-grid">
             {% for gallery in site.data.galleries %}
-            <a href="{{ gallery.href }}" class="gallery-item" style="background-image: url('{{ gallery.thumbnail }}');">
+            <a href="{{ gallery.href }}" class="gallery-item">
+              <div class="gallery-thumbnail" style="background-image: url('{{ gallery.thumbnail }}');"></div>
               <span>{{ gallery.title }}</span>
             </a>
             {% endfor %}
