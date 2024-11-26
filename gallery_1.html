@@ -1,5 +1,8 @@
 ---
 layout: base
+title: Gallery 1
+gallery_folder: /assets/images/gallery_1/
+---
 ---
 <head>
     <meta charset="UTF-8">
@@ -17,10 +20,14 @@ layout: base
                 </ul>
             </nav>
         </aside>
-        <main class="gallery-horizontal">
-            <img src="assets/images/gallery_1/DSCF0074.JPG" alt="Image 1">
-            <!-- Add more images as needed -->
-        </main>
+        <div class="gallery-horizontal">
+            {% assign gallery_folder = page.gallery_folder %}
+            {% for image in site.static_files %}
+              {% if image.path contains gallery_folder %}
+                <img src="{{ image.path }}" alt="Gallery Image">
+              {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </body>
 </html>
