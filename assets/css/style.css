@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Droid Serif', serif;
     display: flex;
-    background-color: #dad1b6;
+    background-color: #e0dcd0;
     color: black;
 }
 
@@ -15,7 +15,7 @@ body {
 
 .site-menu {
     width: 250px;
-    background: #dad1b6;
+    background: #e0dcd0;
     color: black;
     padding: 20px;
     box-sizing: border-box;
