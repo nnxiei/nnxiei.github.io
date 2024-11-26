@@ -116,3 +116,10 @@ body {
     box-sizing: inherit;
 }
 
+.index-main p{
+    color: #111111;
+    font-family: "Droid Serif", serif;
+    line-height: 1.7 !important;
+    font-size: 14px;
+}
+
