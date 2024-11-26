@@ -15,29 +15,27 @@ body {
 
 
 .site-menu {
-    width: 350px;
+    width: 250px;
     background: #f0ece1;
     color: black;
     padding: 20px;
-    box-sizing: border-box;
     text-align: center;
-    display: flex;
+    display: block;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-menu h1 {
     
-    margin-bottom: 60px;
-    padding-top: 60px;  
+    margin-bottom: 5px;
     color: #101010;
     font-family: "Droid Serif", serif;
-    font-size: 26px;
+    font-size: 35px;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
     display: block;
-    padding: 1.5em 0 0;
     position: static;    
     align-items: center;
 }
@@ -51,25 +49,22 @@ body {
     text-decoration: underline;
 }
 
-.site-menu nav ul li a{
-    list-style: none;
-    padding: 0.6em 0 0;
-    text-decoration: none;
+/* .site-menu nav ul li a{
     width: auto;
     padding: 0;
     font-family: "Droid Serif", serif;
     font-size: 12px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: normal;    
     line-height: 1.6;
-}
+} */
 
-.site-menu nav li {
+.site-menu nav a{
     text-decoration: none;
     width: auto;
     padding: 0;
     font-family: "Droid Serif", serif;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: normal;
     line-height: 1.6;
@@ -99,6 +94,7 @@ body {
     gap: 20px;
     padding: 20px;    
     align-items: center;
+    justify-content: center;
 }
 
 .gallery-item {
@@ -162,7 +158,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding-top: 20px;          /* Add padding to control spacing from the top */
+    padding-top: 20px;     
 }
 
 
@@ -174,6 +170,8 @@ body {
     border: 0;
     text-align: center;
     align-items: center;
+    justify-content: center;     /* Add padding to control spacing from the top */
+
 }
 
 .index-main p{
@@ -182,5 +180,7 @@ body {
     line-height: 1.7 !important;
     font-size: 14px;
     align-items: center;
+    justify-content: center;     /* Add padding to control spacing from the top */
+
 }
 
